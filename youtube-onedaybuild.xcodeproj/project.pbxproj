@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D9096521273BAC18001A2C8A /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9096520273BAC18001A2C8A /* CacheManager.swift */; };
+		D9096523273C5594001A2C8A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9096522273C5594001A2C8A /* DetailViewController.swift */; };
+		D9096526273C5D55001A2C8A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9096525273C5D55001A2C8A /* WebKit.framework */; };
 		D972E1D52730EA6400984F23 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D972E1D42730EA6400984F23 /* Response.swift */; };
 		D972E1D7273B4DDA00984F23 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D972E1D6273B4DDA00984F23 /* VideoTableViewCell.swift */; };
 		D9BDB611272F7A3E004FB5F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BDB610272F7A3E004FB5F4 /* AppDelegate.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		D9096520273BAC18001A2C8A /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		D9096522273C5594001A2C8A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D9096525273C5D55001A2C8A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		D972E1D42730EA6400984F23 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		D972E1D6273B4DDA00984F23 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		D9BDB60D272F7A3E004FB5F4 /* youtube-onedaybuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "youtube-onedaybuild.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,16 +47,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9096526273C5D55001A2C8A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9096524273C5D54001A2C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9096525273C5D55001A2C8A /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D972E1D8273B4E1F00984F23 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				D9BDB614272F7A3E004FB5F4 /* ViewController.swift */,
+				D9096522273C5594001A2C8A /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -98,6 +112,7 @@
 			children = (
 				D9BDB60F272F7A3E004FB5F4 /* youtube-onedaybuild */,
 				D9BDB60E272F7A3E004FB5F4 /* Products */,
+				D9096524273C5D54001A2C8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +218,7 @@
 				D9BDB629273098C0004FB5F4 /* Model.swift in Sources */,
 				D9BDB62527309290004FB5F4 /* Constants.swift in Sources */,
 				D972E1D7273B4DDA00984F23 /* VideoTableViewCell.swift in Sources */,
+				D9096523273C5594001A2C8A /* DetailViewController.swift in Sources */,
 				D9BDB627273097D5004FB5F4 /* Video.swift in Sources */,
 				D972E1D52730EA6400984F23 /* Response.swift in Sources */,
 			);
@@ -356,6 +372,7 @@
 				DEVELOPMENT_TEAM = 4857JUW834;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "youtube-onedaybuild/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Aurelius;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -384,6 +401,7 @@
 				DEVELOPMENT_TEAM = 4857JUW834;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "youtube-onedaybuild/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Aurelius;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
